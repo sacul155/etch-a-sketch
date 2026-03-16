@@ -5,7 +5,11 @@ function createGrid(gridSize) {
         const square = document.createElement("div");
         square.setAttribute("class", "square");
         content.appendChild(square);
+        square.addEventListener("mouseenter", function changeColor() {
+            square.style.backgroundColor = "black";
+        })
     }
+
 }
 
 createGrid(16);
