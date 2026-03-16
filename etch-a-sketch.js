@@ -1,15 +1,16 @@
 const content = document.querySelector(".container");
 
 function createGrid(gridSize) {
-    for (i = 0; i < gridSize; i++) {
+    for (let i = 0; i < gridSize; i++) {
         const square = document.createElement("div");
-        square.setAttribute("class", "square");
-        content.appendChild(square);
-        square.addEventListener("mouseenter", function changeColor() {
+        square.className("square");
+        square.style.height = `${100 / Math.sqrt(gridSize)}%`;
+        square.style.width = `${100 / Math.sqrt(gridSize)}%`;
+        square.addEventListener("mouseover", function changeColor() {
             square.style.backgroundColor = "black";
         })
+        content.appendChild(square);
     }
-
 }
 
-createGrid(16);
+createGrid(1000);
