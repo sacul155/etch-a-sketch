@@ -1,1 +1,1 @@
-# etch-a-sketch
+This project illustrates DOM manipulation with JavaScript to create an etch-a-sketch activity.
